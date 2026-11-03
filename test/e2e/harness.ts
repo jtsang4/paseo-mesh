@@ -11,6 +11,7 @@ import { DaemonClient } from "@getpaseo/client/internal/daemon-client";
 import { hashDaemonPassword } from "@getpaseo/server/auth";
 import { Client as McpClient } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
+import { PASEO_CLIENT_APP_VERSION } from "../../shared/version";
 
 const exec = promisify(execFile);
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -133,7 +134,7 @@ export class TestDaemon {
     const client = new DaemonClient({
       url: `ws://${this.endpoint}/ws`,
       clientId: `e2e-${this.name}-${Math.random().toString(36).slice(2)}`,
-      appVersion: "0.11.2",
+      appVersion: PASEO_CLIENT_APP_VERSION,
       ...(this.password ? { password: this.password } : {}),
       localCredential: async () => {
         try {
