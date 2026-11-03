@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-11-03
+
+### Changed
+
+- Upgrade the bundled Paseo client and protocol to 0.15.0 and align the client handshake version.
+- Update development dependencies, keeping React 19.2 and React Native 0.86 aligned with the Paseo host and Node types on the supported Node 22 runtime.
+
+### Fixed
+
+- Use Node's URL implementation for server connection parsing to avoid conflicting React Native URL declarations.
+
 ## [0.2.0] - 2026-10-19
 
 ### Added
@@ -65,7 +76,8 @@ All notable changes to this project are documented here. The format follows [Kee
 - Mesh screen, Peers settings screen and Command Center entries in the Paseo app.
 - `paseo-mesh` CLI for headless peer management.
 
-[Unreleased]: https://github.com/jtsang4/paseo-mesh/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/jtsang4/paseo-mesh/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/jtsang4/paseo-mesh/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/jtsang4/paseo-mesh/compare/v0.1.4...v0.2.0
 [0.1.4]: https://github.com/jtsang4/paseo-mesh/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/jtsang4/paseo-mesh/compare/v0.1.2...v0.1.3
