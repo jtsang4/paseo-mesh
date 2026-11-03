@@ -53,18 +53,18 @@
     "@getpaseo/protocol": "^0.15.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.15",
+    "@biomejs/biome": "^2.6.4",
     "@getpaseo/cli": "^0.15.0",
     "@getpaseo/plugin": "^0.15.0",
-    "@modelcontextprotocol/sdk": "^1.32.1",
-    "@tanstack/react-query": "^5.104.3",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@tanstack/react-query": "^5.105.3",
     "@types/node": "^22.20.5",
     "@types/react": "~19.3.0",
     "esbuild": "^0.28.2",
-    "react": "19.1.10",
-    "react-native": "0.81.6",
+    "react": "19.2.9",
+    "react-native": "0.86.3",
     "typescript": "^7.0.2",
-    "vitest": "^5.0.4",
+    "vitest": "^5.1.0",
     "zod": "^4.6.7"
   },
   "overrides": {
