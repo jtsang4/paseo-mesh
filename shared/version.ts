@@ -2,4 +2,4 @@
 export const MESH_VERSION = "0.2.0";
 
 /** Sent as appVersion so peers expose every provider; keep at the @getpaseo/client version. */
-export const PASEO_CLIENT_APP_VERSION = "0.11.2";
+export const PASEO_CLIENT_APP_VERSION = "0.15.0";

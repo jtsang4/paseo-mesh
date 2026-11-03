@@ -6,7 +6,7 @@
 npm install
 ```
 
-Development requires Node.js 22.12 or newer for Vitest 5. The published plugin supports Node.js 22 or newer. The end-to-end suite starts Paseo daemons from the `@getpaseo/cli` dev dependency with temporary homes and free ports; it never touches `~/.paseo` or a daemon on port 6767.
+Development requires Node.js 22.13 or newer for React Native 0.86 and Vitest 5. The published plugin supports Node.js 22 or newer. The end-to-end suite starts Paseo daemons from the `@getpaseo/cli` dev dependency with temporary homes and free ports; it never touches `~/.paseo` or a daemon on port 6767.
 
 ## Checks
 
@@ -32,7 +32,7 @@ Paseo compiles the plugin itself and enforces its runtime boundaries:
 
 Server dependencies other than `zod` and `@getpaseo/plugin/*` are bundled from `node_modules`, so they must be in `dependencies`, not `devDependencies`.
 
-Keep React on the plugin SDK's 19.1 line and React Native on the host's 0.81 line; pin their exact patch versions. Keep `@types/node` on Node 22 so typechecking covers the oldest supported runtime. Development overrides cover the daemon's MCP, AI, Markdown and UUID dependencies and NYC's YAML loader. Keep Undici 6 for Node 22.12 compatibility and YAML 4 for configuration merge keys. The end-to-end suite verifies the overridden daemon too.
+Keep React on the host's 19.2 line and React Native on its 0.86 line; pin their exact patch versions. Keep `@types/node` on Node 22 so typechecking covers the oldest supported runtime. Development overrides cover the daemon's MCP, AI, Markdown and UUID dependencies and NYC's YAML loader. Keep Undici 6 for Node 22.13 compatibility and YAML 4 for configuration merge keys. The end-to-end suite verifies the overridden daemon too.
 
 ## Lockfile
 

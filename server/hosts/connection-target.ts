@@ -1,3 +1,4 @@
+import { URL } from "node:url";
 import type { ConnectionOffer } from "@getpaseo/protocol/connection-offer";
 import { parseConnectionOfferFromUrl } from "@getpaseo/protocol/connection-offer";
 import {
